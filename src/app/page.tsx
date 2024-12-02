@@ -1,11 +1,11 @@
 import React from "react"
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
  return (
-  <>
-  <h2>Welcome to my shopping cart!</h2>
-  <p>This is built in Next.js as a personal practice project.</p>
-  </>
+  <div className="grid place-items-center h-screen">
+    <h2 className="text-4xl font-bold ">Welcome to my shopping cart!</h2>
+    <p className="">This is built in Next.js as a personal practice project.</p>
+  </div>
  )
 }
 

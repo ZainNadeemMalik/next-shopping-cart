@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import { CartProvider } from "@/context/CartContext";
-import '../styles/globals.css'
+import './globals.css'
 
 export const metadata = {
   title: 'My Shopping Cart App',
@@ -10,11 +10,10 @@ export const metadata = {
 const RootLayout = ({ children }: {children: React.ReactNode}) => {
   return (
     <html lang="en">
-    <body className='text-red-500 bg-yellow-400'>
-      <h1 className="text-blue-500">HELLO</h1>
+    <body className="min-h-dvh">
       <Header />
       <CartProvider>
-      <main>{children}</main>
+      <main className="">{children}</main>
       </CartProvider>
     </body>
     </html>
