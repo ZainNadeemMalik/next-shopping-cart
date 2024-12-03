@@ -30,15 +30,15 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
   }
 
   return (
-    <div className="border rounded">
+    <div className="bor rounded mb-8 shadow-xl">
       {/* <div className="product-img-container"> */}
         <img src={product.image} alt={product.title} className="w-full h-auto aspect-square object-contain"/>
       {/* </div> */}
       <h3>{product.title}</h3>
-      <p>Price: ${product.price.toFixed(2)}</p>
-      <label htmlFor="quantity" id={`quantity-${product.id}`}>Select Quantity:</label>
-      <input type="number" min={1} id={`quantity-${product.id}`} value={quantity} onChange={handleQuantityChange} />
-      <button onClick={() => handleAddToCart(product, quantity)} className="add-to-cart-button">Add to cart</button>
+      <p><span className="font-bold">Price:</span> ${product.price.toFixed(2)}</p>
+      <label htmlFor="quantity" id={`quantity-${product.id}`}> <span className="font-bold">Select Quantity: </span> </label>
+      <input type="number" id={`quantity-${product.id}`} value={quantity} onChange={handleQuantityChange} />
+      <button onClick={() => handleAddToCart(product, quantity)} className="bg-red-400 hover:bg-red-300 rounded block py-2 px-4">Add to cart</button>
     </div>
   )
 }

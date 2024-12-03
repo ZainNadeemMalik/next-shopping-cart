@@ -13,7 +13,7 @@ const ProductList:React.FC = async () => {
   }
 
   return(
-    <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 bg-yellow-400">
+    <div className="grid ga-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-6 bg-yelow-400">
       {products.map((product: Product) => (
         <ProductItem
         key={product.id}

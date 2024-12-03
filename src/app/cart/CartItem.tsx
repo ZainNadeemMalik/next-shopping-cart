@@ -23,18 +23,19 @@ const CartItem: React.FC<CartItemProps> = ({ item }) => {
 }
 
   return (
-    <div className="cart-item">
-      <div className="cart-item-img-container">
-        <img src={item.image} alt={item.title} />
-      </div>
+    <div className="rounded mb-8 shadow-xl">
+      {/* <div className="cart-item-img-container"> */}
+        <img src={item.image} alt={item.title} className="w-full h-auto aspect-square object-contain"/>
+      {/* </div> */}
       <h3>{item.title}</h3>
-      <p>{item.price.toFixed(2)}</p>
+      <p> <span className="font-bold">Price: </span> ${item.price.toFixed(2)}</p>
+      <label htmlFor=""><span className="font-bold">Quantity: </span></label>
       <input 
        type="number"
        value={item.quantity}
        min={1}
        onChange={e => handleUpdateCart(item.id, e.target.value)}/>
-      <button onClick={() => handleRemoveFromCart(item.id)} className="remove-from-cart-button">Remove</button>
+      <button onClick={() => handleRemoveFromCart(item.id)} className="block font-bold bg-orange-600 hover:bg-orange-400 px-4 py-2 rounded">Remove</button>
     </div>
   )
 }
