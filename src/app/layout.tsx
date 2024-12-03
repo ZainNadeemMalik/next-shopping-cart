@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { CartProvider } from "@/context/CartContext";
 import './globals.css'
 
@@ -10,11 +11,12 @@ export const metadata = {
 const RootLayout = ({ children }: {children: React.ReactNode}) => {
   return (
     <html lang="en">
-    <body className="min-h-dvh">
+    <body className="">
       <Header />
       <CartProvider>
-      <main className="">{children}</main>
+      <main>{children}</main>
       </CartProvider>
+      <Footer />
     </body>
     </html>
   )

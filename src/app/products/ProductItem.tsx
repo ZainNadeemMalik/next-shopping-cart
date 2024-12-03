@@ -30,10 +30,10 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
   }
 
   return (
-    <div className="product">
-      <div className="product-img-container">
-        <img src={product.image} alt={product.title} />
-      </div>
+    <div className="border rounded">
+      {/* <div className="product-img-container"> */}
+        <img src={product.image} alt={product.title} className="w-full h-auto aspect-square object-contain"/>
+      {/* </div> */}
       <h3>{product.title}</h3>
       <p>Price: ${product.price.toFixed(2)}</p>
       <label htmlFor="quantity" id={`quantity-${product.id}`}>Select Quantity:</label>

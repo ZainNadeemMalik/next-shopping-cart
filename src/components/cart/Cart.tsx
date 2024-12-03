@@ -1,7 +1,7 @@
-import React, { useCallback, useContext, useMemo } from "react"
+import React, { useContext, useMemo } from "react"
 import CartItem from "../../app/cart/components/CartItem"
-import { CartContext } from "../../context/CartReducer"
-import { CartItem as CartItemType } from "../../context/CartReducer"
+import { CartContext } from "../../context/CartContext"
+import { CartItemType } from "../../types"
 
 export default function Cart() {
   const context = useContext(CartContext)
