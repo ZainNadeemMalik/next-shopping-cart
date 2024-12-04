@@ -28,8 +28,8 @@ export default function CartItemList() {
       
       </div>
     )}
-    <div className="bg-pink-400 p-8">
-      <button className="font-bold bg-slate-600 hover:bg-slate-400 rounded py-2 px-4 mb-4">Proceed to checkout</button>
+    <div className="bg-purple-800 text-white px-8 py-4">
+      <button className="font-bold bg-pink-600 hover:bg-pink-400 rounded py-2 px-4 mb-4">Proceed to checkout</button>
         <div className="cart-total">
           <h3> <span className="font-bold">Total price: </span> ${totalPrice.toFixed(2)}</h3>
         </div>

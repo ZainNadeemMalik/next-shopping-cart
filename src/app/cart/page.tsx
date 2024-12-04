@@ -5,7 +5,7 @@ import CartItemList from "./CartItemList";
 const Cart = () => {
   return(
     <>
-    <h2 className="font-bold text-3xl bg-green-700 leading-loose">Cart</h2>
+    <h2 className="font-bold text-3xl p-2 bg-purple-800 text-white leading-loose">Cart</h2>
     <CartItemList />
     </>
   )

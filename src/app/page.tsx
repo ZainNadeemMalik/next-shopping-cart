@@ -2,9 +2,11 @@ import React from "react"
 
 const HomePage: React.FC = () => {
  return (
-  <div className="grid justify-center bg-green-500 min-h-dvh">
+  <div className="grid justify-center min-h-dvh">
     <div className="mt-12">
-    <h2 className="text-4xl font-bold mb-7 text-center">Welcome to my shopping cart app!</h2>
+    <h2 className="text-4xl font-bold mb-7 text-center">Welcome to my Shopping Cart App!</h2>
+
+    <div className="px-4">
     <p>This is a practice project from the <a href="https://www.theodinproject.com/paths/full-stack-javascript" className="underline hover:text-blue-700" target="_blank" rel="noopener noreferrer ">Odin Project</a> full stack Javascript path. This project was a learning ground for the following technologies:</p>
     <ul className="m-6 grid gap-4 list-disc">
 
@@ -21,6 +23,8 @@ const HomePage: React.FC = () => {
       </li>
     </ul>
     <p>Overall, I am proud of what I was able to accomplish. My skills with the aforementioned technologies imporved significantly throughout this journey.</p>
+    </div>
+
     </div>
 
   </div>
