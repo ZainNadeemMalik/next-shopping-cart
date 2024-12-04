@@ -3,6 +3,7 @@
 import React, { useState, useContext } from "react"
 import { CartContext } from "@/context/CartContext";
 import { Product } from "@/types"
+import toast from "react-hot-toast";
 
 interface ProductItemProps {
   product: Product;
@@ -20,6 +21,7 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
 
   const handleAddToCart = (product: Product, quantity: number) => {
     dispatch({ type:'ADD_TO_CART', payload: {...product, quantity: quantity }})
+    toast.success(`${product.title} added to cart`)
   }
 
   function handleQuantityChange(e: React.ChangeEvent<HTMLInputElement>) {

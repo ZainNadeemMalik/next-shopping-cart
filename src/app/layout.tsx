@@ -2,6 +2,7 @@ import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { CartProvider } from "@/context/CartContext";
+import { Toaster } from "react-hot-toast";
 import './globals.css'
 
 export const metadata = {
@@ -14,6 +15,7 @@ const RootLayout = ({ children }: {children: React.ReactNode}) => {
     <body className="">
       <Header />
       <CartProvider>
+        <Toaster position="top-right" reverseOrder={false} />
       <main>{children}</main>
       </CartProvider>
       <Footer />
