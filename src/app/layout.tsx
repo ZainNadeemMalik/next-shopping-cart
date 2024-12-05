@@ -15,7 +15,7 @@ const RootLayout = ({ children }: {children: React.ReactNode}) => {
     <body className="">
       <Header />
       <CartProvider>
-        <Toaster position="top-right" reverseOrder={false} />
+        <Toaster position="top-right" reverseOrder={false} toastOptions={{duration: 3000}}/>
       <main>{children}</main>
       </CartProvider>
       <Footer />

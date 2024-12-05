@@ -21,6 +21,10 @@ const HomePage: React.FC = () => {
       <li>
         I used a <span className="font-bold">Cart Context</span> to reduce props drilling and make the code less cumbersome to write and follow.
       </li>
+
+      <li>
+        I integrated the <span className="font-bold">React Hot Toast</span> library to enhance user experince with a notification to provide visual confirmation when an item is added to the cart. 
+      </li>
     </ul>
     <p>Overall, I am proud of what I was able to accomplish. My skills with the aforementioned technologies imporved significantly throughout this journey.</p>
     </div>
