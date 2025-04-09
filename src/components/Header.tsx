@@ -7,7 +7,7 @@ const Header: React.FC = () => {
  return (
   <header className="bg-black text-white">
     <Link href="/" className="block">
-    <h1 className="text-center text-4xl font-bold bg-rd-500 leading-relaxed">Next.js Shopping Cart</h1>
+    <h1 className="text-center text-4xl font-bold bg-rd-500 leading-relaxed">Digital Mandi</h1>
     </Link>
     <Navbar />
   </header>
