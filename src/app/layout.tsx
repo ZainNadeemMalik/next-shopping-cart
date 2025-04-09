@@ -6,7 +6,7 @@ import { Toaster } from "react-hot-toast";
 import './globals.css'
 
 export const metadata = {
-  title: 'My Shopping Cart App',
+  title: 'Digital Mandi',
 }
 
 const RootLayout = ({ children }: {children: React.ReactNode}) => {
